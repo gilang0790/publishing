@@ -1,0 +1,685 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Helvetica', 'Arial' , 'sans-serif' !important;
+}
+
+* {
+    border-radius: 0px !important;
+}
+
+textarea {
+    resize : none;
+}
+
+.hide-input {
+    display : none;
+}
+
+.display-textbox {
+    background-color: #fff !important;
+}
+
+.input-summary {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel-heading {
+    font-weight: bold !important;
+}
+
+.panel-title {
+    font-weight: bold !important;
+}
+
+.container-table-item {
+    display: table;
+    min-height: 1px;
+    position: absolute;
+    font-size: 10px !important;
+    color: white;
+}
+
+.file-preview-image {
+    width: 100%;
+    height: 100%;
+}
+
+.big-check-box {
+    width: 20px;
+    height: 20px;
+    cursor: pointer !important;
+}
+
+/* Start sidebar menu in layout */
+@media (max-width: 767px) {
+    .main-sidebar {
+        transform: translate(-260px, 0) !important;
+    }
+
+    .sidebar-open .main-sidebar {
+        transform: translate(0, 0) !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .content-wrapper,
+    .main-footer {
+        -webkit-transition: -webkit-transform .3s ease-in-out, margin .3s ease-in-out;
+        -moz-transition: -moz-transform .3s ease-in-out, margin .3s ease-in-out;
+        -o-transition: -o-transform .3s ease-in-out, margin .3s ease-in-out;
+        transition: transform .3s ease-in-out, margin .3s ease-in-out;
+        margin-left: 260px !important;
+        z-index: 820 !important;
+    }
+
+    .main-header .logo {
+        width: 260px;
+    }
+    .main-header .navbar{
+        margin-left: 260px;
+    }
+}
+
+.main-sidebar, .sidebar-menu>li:hover>a>span:not(.pull-right), .sidebar-menu>li:hover>.treeview-menu {
+    width: 260px !important;
+    cursor: default;
+}
+
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>a>.pull-right-container {
+    left: 260px !important;
+}
+
+.treeview-menu {
+    background-color: #FFFFFF !important;
+}
+
+.treeview-menu>li:hover>a, .treeview-menu>li.active>a {
+    color: #3C8DBC !important;
+    font-weight: normal !important;
+}
+/* End sidebar menu in layout */
+
+.table-item {
+    /*    cursor: all-scroll !important;
+        height: 10vh;
+        width: 100% !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        display: table-cell !important;
+        vertical-align: middle;
+        padding-left: 1vh !important;
+        padding-right: 1vh !important;   */
+}
+
+/* fix kartik datecontrol wiggle on show tooltip */
+.kv-date-calendar {
+    border-left: 0px !important;
+}
+
+.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    opacity:  0.5 !important;
+}
+.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    opacity:  0.5 !important;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    opacity:  0.5 !important;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    opacity:  0.5 !important;
+}
+
+.content-header {
+    padding: 5px 15px 0px 15px !important;
+}
+
+.content-header>.breadcrumb {
+    top: 5px !important;
+    right: 15px !important;
+}
+
+.with-text:after {
+    content: "\00a0";
+}
+
+.tooltip-inner {
+    padding: 10px;
+    font-size: 12px;
+    font-family: Calibri;
+}
+
+.footer {
+    height: 60px;
+    background-color: #F5F5F5;
+    border-top: 1px solid #DDDDDD;
+    padding-top: 20px;
+}
+
+#loading-div {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: center no-repeat url('../images/ajax-loader.gif') rgba(100, 100, 100, 0.7);
+    z-index: 10000;
+    display: none;
+}
+
+.hide-object {
+    display: none;
+}
+
+.blue-background {
+    background-color: #3c8dbc !important;
+    color: #fff;
+    font-weight: normal !important;
+}
+
+.row-error {
+    background-color: #d9534f;
+} 
+
+.row-warning {
+    background-color: #FFB03B;
+} 
+
+.row-color-guide {
+    background-color: #FFB03B;
+    display: inline-block;
+    width: 5% !important;
+}
+
+/* Start table */
+.table-scroll tbody {
+    display: block;
+    height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.table-scroll thead, .table-scroll tbody tr {
+    display: table;
+    width: 100%;
+    table-layout:fixed;
+}
+
+.table-scroll tbody td:last-child, .table-scroll thead th:last-child {
+    border-right: none;
+}
+
+.table-vertical-center>tbody>tr>td, .table-vertical-center>tfoot>tr>td {
+    padding: 6px !important;
+    display: table-cell !important;
+    vertical-align: middle !important;
+    height: 100% !important;
+}
+
+th {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.kv-merged-header, .table-bordered>thead>tr>td {
+    border-bottom: 0px !important;
+}
+
+td input[type="checkbox"] {
+    position: relative;
+    top: 5px;
+}
+
+.kv-row-select input[type="checkbox"] {
+    position: relative;
+    top: 0px !important;
+}
+
+.table tbody tr:focus{
+    background-color: #E0FFFF !important;
+}
+
+.branch-header-list {
+    width: 100%;
+    vertical-align: middle;
+    cursor: default;
+    padding: 15px;
+}
+/* End table */
+
+/* Tab Style */
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab a {
+    background-color: #B8B3B3;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color: #000;
+}
+
+/* Change background color of buttons on hover */
+.tab a:hover {
+    background-color: #3c8dbc;
+    color: #fff;
+}
+
+/* Create an active/current tablink class */
+.tab a.active {
+    background-color: #3c8dbc;
+    color: #fff;
+}
+
+/* Style the tab content */
+.tab-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+} 
+
+.tab-links {
+    color: #000;
+} 
+
+/* End Tab Style */
+
+/* Start custom kartik grid */
+.kv-grid-table{
+    font-size: 12px !important;
+    line-height: 1 !important;
+    overflow: hidden;
+    overflow:scroll !important;
+    -webkit-overflow-scrolling:touch !important;
+}
+
+.kv-panel-after {
+    display: none;
+}
+/* End custom kartik grid */
+
+
+/* Start add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+/* End add sorting icons to gridview sort links */
+
+
+/* Start custom and theming select2 */
+.select2-container .select2-selection--single .select2-selection__rendered {
+    margin-top: 0px !important;
+}
+
+.select2-container--krajee.select2-container--open .select2-selection, .select2-container--krajee .select2-selection:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-color: #3C8DBC !important;
+}
+
+.select2-container--krajee .select2-dropdown {
+    border-color: #3C8DBC !important;
+}
+/* End custom select2 */
+
+
+/* Start dropdown header for user toggle */
+.navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
+    right: 0px !important;
+}
+
+.dropdown-menu-account {
+    padding: 0px;
+}
+
+.dropdown-menu-account>li {
+    height: 50px;
+}
+
+.dropdown-menu-account>li>a {
+    padding: 15px;
+}
+
+.dropdown-menu-account>li>a:hover {
+    color: #FFFFFF !important;
+    background-color: #3C8DBC !important;
+}
+/* End dropdown header for user toggle */
+
+
+/* Start sidebar menu in layout */
+@media (max-width: 767px) {
+    .main-sidebar {
+        transform: translate(-260px, 0) !important;
+    }
+
+    .sidebar-open .main-sidebar {
+        transform: translate(0, 0) !important;
+    }
+}
+
+.main-sidebar, .sidebar-menu>li:hover>a>span:not(.pull-right), .sidebar-menu>li:hover>.treeview-menu {
+    cursor: default;
+}
+
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>a>.pull-right-container {
+
+}
+
+.treeview-menu {
+    background-color: #FFFFFF !important;
+}
+
+.treeview-menu>li:hover>a, .treeview-menu>li.active>a {
+    color: #3C8DBC !important;
+    font-weight: normal !important;
+}
+/* End sidebar menu in layout */
+
+
+/* Start login box */
+.login-box {
+    /*width: 420px !important;*/
+    margin: 5% auto !important;
+    border: 1px solid #CCCCCC;
+}
+
+.login-box-body {
+    padding: 40px 57px !important;
+}
+
+.login-logo, .register-logo {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 0px !important;
+    font-weight: 300;
+    background: #3c8dbc !important;
+    padding: 15px;
+}
+
+.login-logo a, .register-logo a {
+    color: #fff;
+}
+/* End login box */
+
+
+/* Start float head table */
+.wrapper-table.small-table {
+    height: 400px;
+    width: 100%;
+}
+
+.wrapper-table {
+    overflow: auto;
+    position: relative;
+}
+
+.wrapper-table th, .floatThead-table {
+    background-color: #EFEFEF;
+}
+
+.floatThead-container {
+    z-index: 849 !important;
+}
+
+.table-input {
+    margin-bottom:5px !important;
+}
+
+.table-input>tbody>tr>td .form-control, .table-input>tfoot>tr>td .form-control {
+    font-size: 12px !important;
+    line-height: 26px !important;
+    height: 26px !important;
+}
+
+.table-input>tbody>tr>td .btn, .table-input>tfoot>tr>td .btn {
+    font-size: 12px !important;
+    height: 26px !important;
+}
+
+.table-input>tbody>tr>td .option, .table-input>tfoot>tr>td .option {
+    font-size: 12px !important;
+}
+
+.table-input>tbody>tr>td, .table-input>tfoot>tr>td {
+    padding: 2px !important;
+}
+
+.table-input>tbody>tr>td .select2-container .select2-selection--single, .table-input>tfoot>tr>td .select2-container .select2-selection--single {
+    height: 26px !important;
+    font-size: 12px !important;
+}
+
+.table-input>tbody>tr>td .select2-container .select2-selection__arrow, .table-input>tfoot>tr>td .select2-container .select2-selection__arrow {
+    height: 24px !important;
+}
+
+/* End float head table */
+
+/* Start Master COA */
+#mastercoa .treeview .badge{
+    padding: 0px;
+    background-color: transparent;
+}
+/* End Master Coa */
+
+
+/* Start dropdown header for user toggle */
+.navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
+    right: 0px !important;
+}
+
+.dropdown-menu-account {
+    padding: 0px;
+}
+
+.dropdown-menu-account>li {
+    height: 50px;
+}
+
+.dropdown-menu-account>li>a {
+    padding: 15px;
+}
+
+.dropdown-menu-account>li>a:hover {
+    color: #FFFFFF !important;
+    background-color: #3C8DBC !important;
+}
+
+.square-box{
+    position: relative;
+    height: 10vh !important;
+    width: 10vh !important;
+    overflow: hidden;
+    background: #3c8dbc;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.rectangle-box{
+    position: relative;
+    height: 10vh !important;
+    width: 20vh !important;
+    overflow: hidden;
+    background: #3c8dbc;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.circle-box {
+    height: 10vh !important;
+    width: 10vh !important;
+    display: table-cell !important;
+    vertical-align: middle;
+    text-align: center;
+    -moz-border-radius: 10vh !important;
+    -webkit-border-radius: 10vh !important;
+    border-radius: 10vh !important;
+    background: #3c8dbc;
+}
+
+.small-square-box{
+    position: relative;
+    height: 6vh !important;
+    width: 6vh !important;
+    overflow: hidden;
+    background: #3c8dbc;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.small-rectangle-box{
+    position: relative;
+    height: 6vh !important;
+    width: 12vh !important;
+    overflow: hidden;
+    background: #3c8dbc;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.input-group-non-browse{
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+/* End dropdown header for user toggle */
+
+/* BEGIN Z-INDEX LEFT MENU */
+.main-sidebar {
+    z-index: 1010 !important;
+}
+/* END Z-INDEX LEFT MENU */
+
+/*Browse .kv-thead-float resize*/
+#ModalDialogBody .table-responsive.kv-grid-container > div
+{
+    left: auto !important;
+    top: auto !important;
+}
+
+.login-pull-right {
+    float: right !important;
+}
+.login-pull-left {
+    float: left !important;
+}
+
+.brand-logo {
+    height:150px;
+}
+
+@media (max-width: 992px) {  
+    .login-pull-right {
+        float: none !important;
+    }
+    .login-pull-left {
+        float: none !important;
+    }
+    .login-box,
+    .register-box {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 425px){
+    .brand-logo {
+        height:100px;
+    }
+}
+
+.notes-box-body {
+    padding: 0px 0px !important;
+}
+.notes-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 0px;
+}
+
+/*** PANEL DEFAULT ***/
+.with-nav-tabs.panel-default .nav-tabs > li > a,
+.with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+    color: #777;
+}
+.with-nav-tabs.panel-default .nav-tabs > .open > a,
+.with-nav-tabs.panel-default .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+    color: #777;
+    background-color: #ddd;
+    border-color: transparent;
+    cursor: pointer;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.active > a,
+.with-nav-tabs.panel-default .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.active > a:focus {
+    color: #555;
+    background-color: #fff;
+    border-color: #ddd;
+    border-bottom-color: transparent;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a {
+    color: #777;   
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+    background-color: #ddd;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #555;
+}
